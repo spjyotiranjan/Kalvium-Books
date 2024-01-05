@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap');
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  background-image: url("./assets/backgroundLogo.png");
+  background-size: 100vw 27vw;
+  background-repeat: no-repeat;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+    :root{
+      background-size: 100vw 40vw;
+    }
+}
+@media screen and (max-width: 426px){
+  :root{
+    background-size: 100vw 80vw;
+  }
+}

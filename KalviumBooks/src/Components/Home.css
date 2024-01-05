@@ -1,0 +1,234 @@
+.home{
+    width: 100%;
+}
+.homeUp{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 21vw;
+    margin-top: 6vw;
+}
+.tagline{
+    font-size: 4vw;
+    color: white;
+}
+.subtagline{
+    font-size: 1.8vw;
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+    color: rgba(255, 255, 255, 0.816);
+}
+
+.searchInput{
+    height: 2.7vw;
+    width: 20vw;
+    border-radius: 1.35vw 0 0 1.35vw;
+    border: 1px solid #ED3938;
+    padding-left: 1vw;
+    outline: none;
+    font-size: 1vw;
+    text-align: left;
+}
+.searchInput:focus{
+    border: 2px solid #ED3938;
+}
+.searchButton{
+    height: 2.7vw;
+    width: 8vw;
+    border-radius: 0 1.35vw 1.35vw 0;
+    border: none;
+    background-color: #ED3938;
+    color: white;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: font-size 0.3s;
+}
+.homeDown{
+    text-align: center;
+}
+.category{
+    margin: 1vw 0;
+    font-size: 2.5vw;
+}
+
+.books{
+    width: 100%;
+    /* height: 46vw; */
+    padding: 1.5vw 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ED3938; */
+    /* overflow: auto; */
+}
+.registerModal{
+    position: absolute;
+    /* height: 100%; */
+    /* width: 94vw; */
+    width: 16vw;
+    height: 20vw;
+    background-color: rgba(197, 197, 197, 0.174);
+    backdrop-filter: blur(8px);
+    transition: background-color 0.5s, border-radius 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+    border-radius: 0.5vw;
+}
+.registerModal:hover{
+    background-color: rgba(0, 0, 0, 0.319);
+
+}
+.modalButton{
+    height: 2.5vw;
+    border: none;
+    background-color: #ED3938;
+    color: white;
+    border-radius: 0.5vw;
+    padding: 0vw 1.4vw;
+    cursor: pointer;
+    font-size: 1vw;
+    box-shadow: 0 0 1vw rgba(255, 0, 0, 0.778);
+    border: 2px solid #ed38387b;
+    transition: transform 0.3s;
+
+}
+.modalButton:hover{
+    transform: scale(1.05);
+}
+.booklist{
+    padding: 1vw;
+    /* gap: 2vw; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* background-color: #ED3938; */
+
+    height: 100%;
+    gap: 8%;
+    width: 180vw;
+
+    
+}
+.list{
+    width: 16vw;
+    height: 20vw;
+    background-color: white;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.211);
+    /* margin-right: 2vw; */
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    transition: transform 0.2s;
+}
+.list:hover{
+    transform: scale(1.03);
+}
+.image{
+    height: 12vw;
+}
+.title{
+    font-size: 1.1vw;
+    color: black;
+}
+.text{
+    color: grey;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    .homeUp{
+        height: 30vw;
+        margin-top: 10vw;
+    }
+    .tagline{
+        font-size: 6vw;
+    }
+    .subtagline{
+        font-size: 3vw;
+    }
+    .searchInput,.searchButton{
+        height: 4vw;
+    }
+    .searchInput{
+        border-radius: 2vw 0 0 2vw;
+        width: 25vw;
+        font-size: 1.5vw;
+        padding-left: 1.5vw;
+    }
+    .searchButton{
+        border-radius: 0 2vw 2vw 0;
+        width: 10vw;
+        font-size: 1.3vw;
+    }
+    .category{
+        font-size: 3.5vw;
+        margin: 1.5vw 0;
+    }
+}
+@media screen and (max-width: 426px){
+    .homeUp{
+        height: 65vw;
+        margin-top: 15vw;
+    }
+    .tagline{
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    .subtagline{
+        font-size: 5vw;
+        margin: 4vw 0;
+    }
+    .searchInput,.searchButton{
+        height: 8vw;
+    }
+    .searchInput{
+        border-radius: 4vw 0 0 4vw;
+        width: 50vw;
+        font-size: 3vw;
+        padding-left: 3vw;
+    }
+    .searchButton{
+        border-radius: 0 4vw 4vw 0;
+        width: 20vw;
+        font-size: 3vw;
+    }
+    .category{
+        font-size: 6vw;
+        margin: 3vw 0;
+    }
+    .booklist{
+        grid-template-columns: 1fr;
+    }
+    .list{
+        width: 70vw;
+        height: 70vw;
+        border-radius: 1.5vw;
+        margin: auto;
+        padding: 2vw;
+    }
+    .registerModal{
+        width: 70vw;
+        height: 70vw;
+        margin: 0 11vw;
+    }
+    .modalButton{
+        height: 10vw;
+        font-size: 4vw;
+        padding: 0 5vw;
+        border-radius: 2.5vw;
+    }
+    .image{
+        height: 40vw;
+    }
+    .title{
+        font-size: 5vw;
+    }
+    .text{
+        font-size: 4vw;
+    }
+}
